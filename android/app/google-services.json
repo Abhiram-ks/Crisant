@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "166895019053",
+    "project_id": "crisant-develop",
+    "storage_bucket": "crisant-develop.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166895019053:android:5108fb1c538ecff18dc4a4",
+        "android_client_info": {
+          "package_name": "com.example.crisant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYYyYmpH3njNea5hFDdV6wSZnkNrgWKuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166895019053:android:8a23d1ac7b31de518dc4a4",
+        "android_client_info": {
+          "package_name": "com.example.crisent_pannel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYYyYmpH3njNea5hFDdV6wSZnkNrgWKuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
