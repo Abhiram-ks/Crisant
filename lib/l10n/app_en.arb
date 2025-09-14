@@ -1,0 +1,37 @@
+{
+  "@@locale": "en",
+  
+  "appTitle": "Crisant",
+  "@language":{
+    "description": "Application Titile"
+  },
+  "language": "English",
+  "@language":{
+    "description": "The application language displayed to the user"
+  },
+  "appDescription": "With our unique combination of technology and creativity, we help take your business to the next level.",
+  "@language":{
+    "description": "Application description"
+  },
+  "loading": "Loading...",
+  "@language":{
+    "description": "Loading description"
+  },
+  "login": "Login",
+  "@language":{
+    "description": "login description"
+  },
+  "pleaseWait": "Please Wait...",
+  "@language":{
+    "description": "Plese Wait description"
+  },
+  "welcomback": "Welcome Back!",
+  "@language":{
+    "description": "Welcome description"
+  },
+  "googleSignIn": "Sign Up with Google",
+  "@language":{
+    "description": "Sign Up with Google description"
+  }
+}
+

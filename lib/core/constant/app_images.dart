@@ -1,4 +1,5 @@
 class AppImages {
-  static const String appLogo = 'assets/application_logo.png';
-  static const String backgroundImage = 'assets/background.jpg';
+  static const String appLogo = 'assets/crisant_logo.png';
+  static const String animation = 'assets/ellipes_animation.json';
+  static const String googleLogo = 'assets/google_logo.png';
 }
