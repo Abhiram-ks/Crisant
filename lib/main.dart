@@ -1,4 +1,6 @@
 
+import 'package:crisent_pannel/core/network/permisions.dart';
+import 'package:crisent_pannel/core/notification/notification_service.dart';
 import 'package:crisent_pannel/core/routes/app_routes.dart';
 import 'package:crisent_pannel/core/themes/app_themes.dart';
 import 'package:crisent_pannel/features/presentation/provider/cubit/localization_cubit/localization_cubit.dart';
@@ -16,7 +18,9 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  await requestNotificationPermission();
   await FirebaseMessaging.instance.requestPermission();
+  await LocalNotificationServices.init();
 
   runApp(
     MultiBlocProvider(

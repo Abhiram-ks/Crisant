@@ -21,9 +21,9 @@ class PersonModel extends PersonEntity {
 
   factory PersonModel.fromMap(Map<String, dynamic> map) {
     return PersonModel(
-      uid: map['uid'] ?? '',
-      userName: map['userName'] ?? '',
-      email: map['email'] ?? '',
+      uid: map['uid'] ?? 'unknown',
+      userName: map['userName'] ?? 'unknown user',
+      email: map['email'] ?? 'unknown email',
       image: map['image'] ?? '',
       fcmToken: map['fcmToken'] ?? '',
     );

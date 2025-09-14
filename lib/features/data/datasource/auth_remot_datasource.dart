@@ -1,4 +1,7 @@
 
+
+import 'dart:developer';
+
 import 'package:crisent_pannel/core/error/firebase_exception.dart';
 import 'package:crisent_pannel/features/data/datasource/person_local_datasource.dart';
 import 'package:crisent_pannel/features/data/model/person_model.dart';
@@ -27,8 +30,7 @@ class AuthRemoteDataSource {
 
       if (user == null) throw FirebaseAuthExceptionCustom('Authentication failed. No user information was returned. Please try signing in again.');
         String? fcmToken = await FirebaseMessaging.instance.getToken();
-
-    
+        log("FCM TOKEN: $fcmToken");
           final newUser = PersonModel(
             uid: user.uid,
             userName: user.displayName ?? '',

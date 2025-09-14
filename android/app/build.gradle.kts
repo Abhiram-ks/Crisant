@@ -13,35 +13,32 @@ android {
     compileSdk = 35
     ndkVersion = "27.0.12077973"
 
+    defaultConfig {
+        applicationId = "com.example.crisent_pannel"
+        minSdk = 23
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0.0"
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+        isCoreLibraryDesugaringEnabled = true // Kotlin DSL
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
-    }
-
-    defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.crisent_pannel"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = 24
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        jvmTarget = "11"
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
         }
     }
 }
 
-flutter {
-    source = "../.."
+dependencies {
+    // Kotlin DSL syntax
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
 }

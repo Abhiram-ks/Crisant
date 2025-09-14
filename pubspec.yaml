@@ -47,13 +47,14 @@ dependencies:
   lottie: ^3.3.1
   flutter_localizations:
     sdk: flutter
-  intl_utils: ^2.1.0
+  # intl_utils: ^2.1.0
   init: any
   connectivity_plus: ^7.0.0
   #cloud_firestore: ^5.6.5
   sqflite: ^2.4.2
   path: ^1.9.1
   flutter_local_notifications: ^19.4.2
+  dio: ^5.9.0
 
 dev_dependencies:
   flutter_test:

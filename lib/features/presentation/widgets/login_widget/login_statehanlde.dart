@@ -1,0 +1,27 @@
+import 'package:crisent_pannel/core/common/custom_snackbar.dart';
+import 'package:crisent_pannel/core/routes/app_routes.dart';
+import 'package:crisent_pannel/core/themes/app_colors.dart';
+import 'package:crisent_pannel/features/presentation/provider/bloc/googlesign_bloc/googlesign_bloc.dart';
+import 'package:crisent_pannel/features/presentation/provider/cubit/progresser_cubit/progresser_cubit.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+void loginStatehandle(BuildContext context, GooglesignState state) {
+  final progresser = context.read<ProgresserCubit>();
+  if (state is GooglesingFailure) {
+    progresser.stopLoading();
+    CustomSnackBar.show(
+      context,
+      message: 'Login Failure! ${state.message}',
+      backgroundColor: AppPalette.redColor,
+      textAlign: TextAlign.center,
+      durationSeconds: 4,
+    );
+  } else if (state is GooglesingSuccess) {
+    progresser.stopLoading();
+    Navigator.pushReplacementNamed(context, AppRoutes.home);
+  } else if (state is GooglesingLoading) {
+    progresser.startLoading();
+  }
+}
+
