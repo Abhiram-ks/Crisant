@@ -14,15 +14,20 @@ class UserRemoteDataSource {
         "api/users",
         queryParameters: {"page": page},
       );
-        log('response ; ${response.data}, $response');
-      if (response.statusCode == 200 && response.data != null) {
+      log('response ; ${response.data}, $response');
+      if (response.statusCode != null &&
+          response.statusCode! >= 200 &&
+          response.statusCode! < 300 &&
+          response.data != null) {
         final List data = response.data['data'];
         return data.map((json) => UserModel.fromJson(json)).toList();
       } else {
         throw Exception("Failed to load users, status: ${response.statusCode}");
       }
     } on DioException catch (dioError) {
-      log('DioException: ${dioError.response?.statusCode} -> ${dioError.message}');
+      log(
+        'DioException: ${dioError.response?.statusCode} -> ${dioError.message}',
+      );
       throw Exception("Request error: ${dioError.message}. Please try again");
     } catch (e) {
       log(' Unexpected error: $e');

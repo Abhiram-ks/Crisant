@@ -101,7 +101,7 @@ abstract class AppLocalizations {
   /// **'Crisant'**
   String get appTitle;
 
-  /// Sign Up with Google description
+  /// No description provided for @language.
   ///
   /// In en, this message translates to:
   /// **'English'**
@@ -131,17 +131,101 @@ abstract class AppLocalizations {
   /// **'Please Wait...'**
   String get pleaseWait;
 
-  /// No description provided for @welcomback.
+  /// No description provided for @welcomeBack.
   ///
   /// In en, this message translates to:
   /// **'Welcome Back!'**
-  String get welcomback;
+  String get welcomeBack;
 
   /// No description provided for @googleSignIn.
   ///
   /// In en, this message translates to:
   /// **'Sign Up with Google'**
   String get googleSignIn;
+
+  /// No description provided for @addUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Add User'**
+  String get addUser;
+
+  /// No description provided for @logOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get logOut;
+
+  /// No description provided for @dashboardLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get dashboardLanguage;
+
+  /// No description provided for @dashboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Dashboard'**
+  String get dashboard;
+
+  /// No description provided for @troubleText.
+  ///
+  /// In en, this message translates to:
+  /// **'Trouble to Proceed!'**
+  String get troubleText;
+
+  /// No description provided for @troubleDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We\'re happy to have you here! Crisant is your trusted platform. Trouble processing your request — please try again later.'**
+  String get troubleDescription;
+
+  /// No description provided for @createAnAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create An Account'**
+  String get createAnAccount;
+
+  /// No description provided for @createAnDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your details to complete your account creation process.'**
+  String get createAnDescription;
+
+  /// No description provided for @fName.
+  ///
+  /// In en, this message translates to:
+  /// **'First Name *'**
+  String get fName;
+
+  /// No description provided for @fHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What’s your first name?'**
+  String get fHint;
+
+  /// No description provided for @lName.
+  ///
+  /// In en, this message translates to:
+  /// **'Last Name *'**
+  String get lName;
+
+  /// No description provided for @lHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What’s your last name?'**
+  String get lHint;
+
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email *'**
+  String get email;
+
+  /// No description provided for @emailHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email address'**
+  String get emailHint;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

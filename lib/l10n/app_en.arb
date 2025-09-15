@@ -1,37 +1,25 @@
 {
   "@@locale": "en",
-  
   "appTitle": "Crisant",
-  "@language":{
-    "description": "Application Titile"
-  },
   "language": "English",
-  "@language":{
-    "description": "The application language displayed to the user"
-  },
   "appDescription": "With our unique combination of technology and creativity, we help take your business to the next level.",
-  "@language":{
-    "description": "Application description"
-  },
   "loading": "Loading...",
-  "@language":{
-    "description": "Loading description"
-  },
   "login": "Login",
-  "@language":{
-    "description": "login description"
-  },
   "pleaseWait": "Please Wait...",
-  "@language":{
-    "description": "Plese Wait description"
-  },
-  "welcomback": "Welcome Back!",
-  "@language":{
-    "description": "Welcome description"
-  },
+  "welcomeBack": "Welcome Back!",
   "googleSignIn": "Sign Up with Google",
-  "@language":{
-    "description": "Sign Up with Google description"
-  }
+  "addUser": "Add User",
+  "logOut": "Logout",
+  "dashboardLanguage": "Language",
+  "dashboard": "Dashboard",
+  "troubleText": "Trouble to Proceed!",
+  "troubleDescription": "We're happy to have you here! Crisant is your trusted platform. Trouble processing your request — please try again later.",
+  "createAnAccount": "Create An Account",
+  "createAnDescription": "Please enter your details to complete your account creation process.",
+  "fName": "First Name *",
+  "fHint": "What’s your first name?",
+  "lName": "Last Name *",
+  "lHint": "What’s your last name?",
+  "email": "Email *",
+  "emailHint": "Enter a valid email address"
 }
-

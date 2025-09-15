@@ -1,4 +1,4 @@
-package com.example.crisent_pannel
+package com.crisent.deve
 
 import io.flutter.embedding.android.FlutterActivity
 

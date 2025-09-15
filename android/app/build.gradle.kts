@@ -9,12 +9,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.crisent_pannel"
+    namespace = "com.crisent.deve"
     compileSdk = 35
     ndkVersion = "27.0.12077973"
 
     defaultConfig {
-        applicationId = "com.example.crisent_pannel"
+        applicationId = "com.crisent.deve"
         minSdk = 23
         targetSdk = 34
         versionCode = 1
@@ -41,4 +41,5 @@ android {
 dependencies {
     // Kotlin DSL syntax
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
+    implementation("com.google.android.material:material:1.12.0")
 }

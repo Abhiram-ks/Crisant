@@ -27,8 +27,50 @@ class AppLocalizationsHi extends AppLocalizations {
   String get pleaseWait => 'कृपया प्रतीक्षा करें...';
 
   @override
-  String get welcomback => 'स्वागत है!';
+  String get welcomeBack => 'स्वागत है!';
 
   @override
   String get googleSignIn => 'गूगल से साइन अप करें';
+
+  @override
+  String get addUser => 'उपयोगकर्ता जोड़ें';
+
+  @override
+  String get logOut => 'साइन आउट';
+
+  @override
+  String get dashboardLanguage => 'भाषा';
+
+  @override
+  String get dashboard => 'डैशबोर्ड';
+
+  @override
+  String get troubleText => 'आगे बढ़ने में समस्या!';
+
+  @override
+  String get troubleDescription => 'हमें खुशी है कि आप यहाँ हैं! क्रिसेंट आपका विश्वसनीय प्लेटफ़ॉर्म है। आपके अनुरोध को प्रोसेस करने में समस्या हुई — कृपया बाद में पुनः प्रयास करें।';
+
+  @override
+  String get createAnAccount => 'खाता बनाएँ';
+
+  @override
+  String get createAnDescription => 'कृपया अपना विवरण दर्ज करें ताकि आपका खाता निर्माण पूरा हो सके।';
+
+  @override
+  String get fName => 'पहला नाम *';
+
+  @override
+  String get fHint => 'आपका पहला नाम क्या है?';
+
+  @override
+  String get lName => 'अंतिम नाम *';
+
+  @override
+  String get lHint => 'आपका अंतिम नाम क्या है?';
+
+  @override
+  String get email => 'ईमेल *';
+
+  @override
+  String get emailHint => 'एक मान्य ईमेल पता दर्ज करें';
 }

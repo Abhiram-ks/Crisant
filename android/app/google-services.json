@@ -7,12 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:166895019053:android:5108fb1c538ecff18dc4a4",
+        "mobilesdk_app_id": "1:166895019053:android:4ada247804d46ba88dc4a4",
         "android_client_info": {
-          "package_name": "com.example.crisant"
+          "package_name": "com.crisent.deve"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "166895019053-tu7ekegtikmmh2t3dph11veahl4ch3gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAYYyYmpH3njNea5hFDdV6wSZnkNrgWKuk"
@@ -20,7 +25,55 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166895019053-tu7ekegtikmmh2t3dph11veahl4ch3gq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "166895019053-lso6ig2bh53aoa3hdk12d5qilm8oj0st.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.crisentPannel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166895019053:android:5108fb1c538ecff18dc4a4",
+        "android_client_info": {
+          "package_name": "com.example.crisant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166895019053-tu7ekegtikmmh2t3dph11veahl4ch3gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYYyYmpH3njNea5hFDdV6wSZnkNrgWKuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166895019053-tu7ekegtikmmh2t3dph11veahl4ch3gq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "166895019053-lso6ig2bh53aoa3hdk12d5qilm8oj0st.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.crisentPannel"
+              }
+            }
+          ]
         }
       }
     },
@@ -31,7 +84,20 @@
           "package_name": "com.example.crisent_pannel"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "166895019053-86e8hbpe2mlg28r5icsnf0nnua2vib1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crisent_pannel",
+            "certificate_hash": "6563f3912016e10e2e4cb8a3187afc0ad313eff3"
+          }
+        },
+        {
+          "client_id": "166895019053-tu7ekegtikmmh2t3dph11veahl4ch3gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAYYyYmpH3njNea5hFDdV6wSZnkNrgWKuk"
@@ -39,7 +105,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166895019053-tu7ekegtikmmh2t3dph11veahl4ch3gq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "166895019053-lso6ig2bh53aoa3hdk12d5qilm8oj0st.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.crisentPannel"
+              }
+            }
+          ]
         }
       }
     }

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:crisent_pannel/core/common/custom_connectivity_state.dart';
 import 'package:crisent_pannel/core/common/custom_imageshow.dart';
 import 'package:crisent_pannel/core/constant/app_images.dart';
@@ -5,6 +7,7 @@ import 'package:crisent_pannel/core/constant/constant.dart';
 import 'package:crisent_pannel/core/themes/app_colors.dart';
 import 'package:crisent_pannel/features/presentation/provider/bloc/connectiviy_bloc/connectivity_bloc.dart';
 import 'package:crisent_pannel/features/presentation/provider/bloc/user_bloc/user_bloc.dart';
+import 'package:crisent_pannel/features/presentation/screens/specification_screen.dart';
 import 'package:crisent_pannel/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -92,7 +95,8 @@ class _DashbordBodyState extends State<DashbordBody> {
                             final user = state.users[index];
                             return InkWell(
                               onTap: () {
-                                
+                                log('data type : uid : ${user.id}');
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => SpecificationScreen(uid: user.id),));
                               },
                               child: ListTile(
                                 leading: SizedBox(
@@ -141,7 +145,7 @@ class _DashbordBodyState extends State<DashbordBody> {
                               ConstantWidgets.hight30(context),
 
                               Text(
-                                "Trouble to Proceed!",
+                                AppLocalizations.of(context)?.troubleText ?? "Trouble to Proceed!",
                                 style: Theme.of(
                                   context,
                                 ).textTheme.headlineSmall?.copyWith(
@@ -153,7 +157,7 @@ class _DashbordBodyState extends State<DashbordBody> {
                               ConstantWidgets.hight10(context),
 
                               Text(
-                                "We're happy to have you here! Crisant is your trusted platform. Trouble processing your request — please try again later. ",
+                                AppLocalizations.of(context)?.troubleDescription ??  "We're happy to have you here! Crisant is your trusted platform. Trouble processing your request — please try again later. ",
                                 style: Theme.of(
                                   context,
                                 ).textTheme.bodyMedium?.copyWith(

@@ -11,6 +11,7 @@ import 'package:crisent_pannel/features/presentation/provider/bloc/createuser_bl
 import 'package:crisent_pannel/features/presentation/provider/bloc/image_picker_bloc/image_picker_bloc.dart';
 import 'package:crisent_pannel/features/presentation/widgets/createuser_widget/createuser_state_hanlde.dart';
 import 'package:crisent_pannel/features/presentation/widgets/createuser_widget/createusr_image_widget.dart';
+import 'package:crisent_pannel/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -32,6 +33,7 @@ class _AddUserBodyWidgetState extends State<AddUserBodyWidget> {
   final TextEditingController _firstNameController = TextEditingController();
   final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _emailNameController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return BlocListener<NetworkBloc, NetworkState>(
@@ -53,27 +55,27 @@ class _AddUserBodyWidgetState extends State<AddUserBodyWidget> {
                 children: [
                   CreateUserImageWidget(),
                   CustomTextedit(
-                    label: 'First Name *',
+                    label:  AppLocalizations.of(context)?.fName ?? 'First Name *',
                     controller: _firstNameController,
                     prefixIcon: Icons.person,
-                    hintText: 'What’s your first name?',
+                    hintText:  AppLocalizations.of(context)?.fHint ?? 'What’s your first name?',
                     validate: ValidatorHelper.usernameValidator,
                   ),
                   ConstantWidgets.hight10(context),
                   CustomTextedit(
-                    label: 'Last name *',
+                    label: AppLocalizations.of(context)?.lName ?? 'Last name *',
                     controller: _lastNameController,
                     prefixIcon: Icons.person,
                     prefixIconColor: AppPalette.whiteColor,
-                    hintText: 'What’s your last name?',
+                    hintText: AppLocalizations.of(context)?.lHint ?? 'What’s your last name?',
                     validate: ValidatorHelper.usernameValidator,
                   ),
                   ConstantWidgets.hight10(context),
                   CustomTextedit(
-                    label: 'Email *',
+                    label:AppLocalizations.of(context)?.email ?? 'Email *',
                     controller: _emailNameController,
                     prefixIcon: Icons.mail_rounded,
-                    hintText: "Enter a valid email address",
+                    hintText: AppLocalizations.of(context)?.emailHint ??"Enter a valid email address",
                     validate: ValidatorHelper.emailValidator,
                   ),
                   ConstantWidgets.hight50(context),
@@ -82,7 +84,7 @@ class _AddUserBodyWidgetState extends State<AddUserBodyWidget> {
                       handleCreateUserState(context, creteState);
                     },
                     child: CustomButton(
-                      text: 'Create User',
+                      text: AppLocalizations.of(context)?.createAnAccount ??'Create User',
                       onPressed: () {
                         if (_formKey.currentState?.validate() ?? false) {
                           final imageState =

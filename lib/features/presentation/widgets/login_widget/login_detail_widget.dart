@@ -34,7 +34,7 @@ class LoginDetailsWidget extends StatelessWidget {
         ),
         ConstantWidgets.hight30(context),
          Text(
-           AppLocalizations.of(context)?.welcomback ?? "Welcome Back!",
+           AppLocalizations.of(context)?.welcomeBack ?? "Welcome Back!",
           style: TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.bold,

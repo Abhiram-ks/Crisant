@@ -5,6 +5,7 @@ import 'package:crisent_pannel/core/constant/app_images.dart';
 import 'package:crisent_pannel/core/constant/constant.dart';
 import 'package:crisent_pannel/core/themes/app_colors.dart';
 import 'package:crisent_pannel/features/presentation/provider/bloc/image_picker_bloc/image_picker_bloc.dart';
+import 'package:crisent_pannel/l10n/app_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,7 +22,7 @@ class CreateUserImageWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Create An Account",
+          AppLocalizations.of(context)?.createAnAccount ??"Create An Account",
           style: GoogleFonts.plusJakartaSans(
             fontSize: 28,
             fontWeight: FontWeight.bold,
@@ -29,7 +30,7 @@ class CreateUserImageWidget extends StatelessWidget {
         ),
         ConstantWidgets.hight10(context),
         Text(
-          "Please enter your details to complete your account creation process.",
+         AppLocalizations.of(context)?.createAnDescription ?? "Please enter your details to complete your account creation process.",
         ),
         ConstantWidgets.hight50(context),
         Center(

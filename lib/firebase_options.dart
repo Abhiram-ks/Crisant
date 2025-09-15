@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAYYyYmpH3njNea5hFDdV6wSZnkNrgWKuk',
-    appId: '1:166895019053:android:8a23d1ac7b31de518dc4a4',
+    appId: '1:166895019053:android:4ada247804d46ba88dc4a4',
     messagingSenderId: '166895019053',
     projectId: 'crisant-develop',
     storageBucket: 'crisant-develop.firebasestorage.app',
@@ -70,6 +70,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '166895019053',
     projectId: 'crisant-develop',
     storageBucket: 'crisant-develop.firebasestorage.app',
+    androidClientId: '166895019053-86e8hbpe2mlg28r5icsnf0nnua2vib1t.apps.googleusercontent.com',
+    iosClientId: '166895019053-lso6ig2bh53aoa3hdk12d5qilm8oj0st.apps.googleusercontent.com',
     iosBundleId: 'com.example.crisentPannel',
   );
+
 }

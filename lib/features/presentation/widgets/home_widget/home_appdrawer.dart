@@ -39,7 +39,7 @@ class AppDrawer extends StatelessWidget {
                   ListTile(
                     leading: const Icon(Icons.language_rounded),
                     title: Text(
-                      AppLocalizations.of(context)?.appTitle ?? 'Language',
+                      AppLocalizations.of(context)?.dashboardLanguage ?? 'Language',
                     ),
                     onTap: () {
                       context.read<LocalizationCubit>().toggleText();
@@ -47,7 +47,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                   ListTile(
                     leading: const Icon(Icons.person_add_alt_1_rounded),
-                    title: const Text('Add User'),
+                    title:  Text( AppLocalizations.of(context)?.addUser ?? 'Add User'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -55,7 +55,6 @@ class AppDrawer extends StatelessWidget {
                           builder: (context) => CreateuserScreen(),
                         ),
                       );
-                      log('name is fuck working');
                     },
                   ),
                 ],
@@ -72,8 +71,8 @@ class AppDrawer extends StatelessWidget {
                     },
                     child: ListTile(
                       leading: const Icon(Icons.logout, color: Colors.red),
-                      title: const Text(
-                        'Logout',
+                      title:  Text(
+                         AppLocalizations.of(context)?.logOut ?? 'Logout',
                         style: TextStyle(color: Colors.red),
                       ),
                       onTap: () {
