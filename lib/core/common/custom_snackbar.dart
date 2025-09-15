@@ -1,10 +1,11 @@
+import 'package:crisent_pannel/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomSnackBar {
   static void show(
     BuildContext context, {
     required String message,
-    Color textColor = Colors.white,
+    Color textColor = AppPalette.whiteColor,
     Color backgroundColor = Colors.black87,
     int durationSeconds = 2,
      TextAlign textAlign = TextAlign.left,

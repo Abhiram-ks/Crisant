@@ -1,5 +1,5 @@
 import 'package:crisent_pannel/core/network/connectivity.dart';
-import 'package:crisent_pannel/features/data/datasource/auth_remot_datasource.dart';
+import 'package:crisent_pannel/features/data/datasource/auth_remote_datasource.dart';
 import 'package:crisent_pannel/features/data/repo/auth_repo_impl.dart';
 import 'package:crisent_pannel/features/domain/usecase/auth_usecase.dart';
 import 'package:crisent_pannel/features/presentation/provider/bloc/connectiviy_bloc/connectivity_bloc.dart';
@@ -27,6 +27,7 @@ class LoginScreen extends StatelessWidget {
         ),
           
         BlocProvider(create: (context) => ProgresserCubit()),
+  
        
       ],
       child: LayoutBuilder(

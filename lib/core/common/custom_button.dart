@@ -21,7 +21,7 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     this.bgColor = AppPalette.buttonColor,
     this.textColor = AppPalette.whiteColor,
-    this.borderRadius = 30,
+    this.borderRadius = 9,
     this.borderColor,
     this.padding = const EdgeInsets.symmetric(vertical: 14),
     this.fontSize = 16,

@@ -2,12 +2,14 @@
 import 'package:crisent_pannel/core/network/connectivity.dart';
 import 'package:crisent_pannel/core/routes/app_routes.dart';
 import 'package:crisent_pannel/core/service/api_service.dart';
+import 'package:crisent_pannel/features/data/datasource/auth_remote_datasource.dart';
 import 'package:crisent_pannel/features/data/datasource/person_local_datasource.dart';
 import 'package:crisent_pannel/features/data/datasource/user_remote_datasource.dart';
 import 'package:crisent_pannel/features/data/repo/user_repo_impl.dart';
 import 'package:crisent_pannel/features/domain/usecase/user_usecase.dart';
 import 'package:crisent_pannel/features/presentation/provider/bloc/connectiviy_bloc/connectivity_bloc.dart';
 import 'package:crisent_pannel/features/presentation/provider/bloc/fetch_person_bloc/fetch_person_bloc.dart';
+import 'package:crisent_pannel/features/presentation/provider/bloc/logout_bloc/logout_bloc.dart';
 import 'package:crisent_pannel/features/presentation/provider/bloc/user_bloc/user_bloc.dart';
 import 'package:crisent_pannel/features/presentation/widgets/home_widget/home_appdrawer.dart';
 import 'package:crisent_pannel/features/presentation/widgets/home_widget/home_bodywidget.dart';
@@ -23,6 +25,7 @@ class DashboardScreen extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => NetworkBloc(NetWorkChecker())),
+          BlocProvider(create: (context) => LogoutBloc(AuthRemoteDataSource())),
         BlocProvider(
           create:
               (context) =>
@@ -52,7 +55,7 @@ class DashboardScreen extends StatelessWidget {
               screenHight: screenHight,
             ),
             appBar: CustomAppBarDashbord(notificationCount: 2,onNotificationTap: () {
-              Navigator.pushNamed(context, AppRoutes.adduser,arguments: false);
+             Navigator.pushNamed(context, AppRoutes.createuser);
             },),
             body: DashbordBody(
               screenWidth: screenWidth,

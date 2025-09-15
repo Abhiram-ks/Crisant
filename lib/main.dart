@@ -1,4 +1,5 @@
 
+import 'package:crisent_pannel/core/cloudinary/cloudinary_config.dart';
 import 'package:crisent_pannel/core/network/permisions.dart';
 import 'package:crisent_pannel/core/notification/notification_service.dart';
 import 'package:crisent_pannel/core/routes/app_routes.dart';
@@ -20,6 +21,7 @@ void main() async {
   );
   await requestNotificationPermission();
   await FirebaseMessaging.instance.requestPermission();
+  CloudinaryConfig.initialize();
   await LocalNotificationServices.init();
 
   runApp(
@@ -44,7 +46,6 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Crisant',
           theme: AppTheme.lightTheme,
-          initialRoute: AppRoutes.splash,
           supportedLocales: L10n.all,
           locale: Locale(lan),
           localizationsDelegates: const [
@@ -53,6 +54,7 @@ class MyApp extends StatelessWidget {
             GlobalWidgetsLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
           ],
+          initialRoute: AppRoutes.splash,
           onGenerateRoute: AppRoutes.generateRoute,
         );
       },

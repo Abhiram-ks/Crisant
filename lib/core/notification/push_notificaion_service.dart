@@ -1,15 +1,15 @@
+import 'package:crisent_pannel/core/cloudinary/cloudinary_keystore.dart';
 import 'package:dio/dio.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 class PushNotificationSender {
-  final String serverKey = "YOUR_FIREBASE_SERVER_KEY";
+   String serverKey = FcmConfig.serverKey;
 
   static final Dio _dio = Dio(
     BaseOptions(
       baseUrl: "https://fcm.googleapis.com",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "key=YOUR_FIREBASE_SERVER_KEY",
       },
     ),
   );

@@ -1,5 +1,5 @@
 import 'package:crisent_pannel/core/error/firebase_exception.dart';
-import 'package:crisent_pannel/features/data/datasource/auth_remot_datasource.dart';
+import 'package:crisent_pannel/features/data/datasource/auth_remote_datasource.dart';
 import 'package:crisent_pannel/features/domain/repo/auth_repo.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

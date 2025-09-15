@@ -9,8 +9,8 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create:  (context) => SplashBlocBloc()..add(SplashEventRequest()),
-      child: BlocListener<SplashBlocBloc, SplashBlocState>(
+      create:  (context) => SplashBloc()..add(SplashEventRequest()),
+      child: BlocListener<SplashBloc, SplashBlocState>(
         listener: (context, state) {
           splashStateHandle(context, state);
         },

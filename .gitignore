@@ -43,3 +43,6 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Ignore Cloudinary keystore
+/lib/core/cloudinary/cloudinary_keystore.dart

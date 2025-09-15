@@ -14,7 +14,7 @@ class UserRemoteDataSource {
         "api/users",
         queryParameters: {"page": page},
       );
-
+        log('response ; ${response.data}, $response');
       if (response.statusCode == 200 && response.data != null) {
         final List data = response.data['data'];
         return data.map((json) => UserModel.fromJson(json)).toList();

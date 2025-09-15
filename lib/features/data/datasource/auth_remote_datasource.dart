@@ -53,4 +53,16 @@ class AuthRemoteDataSource {
       throw Exception('Unexpected Error occured due to: $e. Please try again');
     }
   }
+
+
+
+    Future<void> signOutWithGoogle() async {
+    try {
+      await _auth.signOut();
+      await _googleSignIn.signOut();
+      await _localDatasource.deletePerson();
+    } catch (e) {
+      throw Exception('Logout failed: $e');
+    }
+  }
 }

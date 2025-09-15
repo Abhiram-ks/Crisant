@@ -1,5 +1,5 @@
 import 'package:crisent_pannel/core/constant/constant.dart';
-import 'package:crisent_pannel/features/presentation/screens/adduser_screen.dart';
+import 'package:crisent_pannel/features/presentation/screens/createuser_screen.dart';
 import 'package:crisent_pannel/features/presentation/screens/home_screen.dart';
 import 'package:crisent_pannel/features/presentation/screens/login_screen.dart';
 import 'package:crisent_pannel/features/presentation/screens/networkfail_screen.dart';
@@ -10,7 +10,7 @@ class AppRoutes {
   static const String login  = '/login_screen';
   static const String home   = '/home_screen';
   static const String networkfail = '/networkfail_screen';
-  static const String adduser = '/adduser_screen';
+  static const String createuser = '/createuser_screen';
 
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -23,9 +23,9 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => const DashboardScreen());
       case networkfail:
          return MaterialPageRoute(builder: (_)=> const NetworkFailScreen());
-      case adduser:
-      final args = settings.arguments as bool;
-        return MaterialPageRoute(builder: (_) =>  AdduserScreen(isView: args));
+      case createuser:
+        return MaterialPageRoute(builder: (_) => CreateuserScreen());
+    
       default:
         return MaterialPageRoute(
           builder:
