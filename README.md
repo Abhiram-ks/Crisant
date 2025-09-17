@@ -1,3 +1,5 @@
+![image alt](https://github.com/Abhiram-ks/Crisant/blob/d6f57b9be7ec285ed1456df9ad7f0622a640d407/Untitled%20design.png)
+
 # Crisant
 
 # Why Crisant?
@@ -19,4 +21,5 @@
  Flutter | Dart | Firebase | Bloc / Cubit | HTTP Client(dio/http) | Local Storage: sqflite | Notifications | Localization |  network monitoring | Clean Architecture
 
 Crisant combines modern Flutter technologies with clean architecture principles to provide a professional, production-ready app experience while demonstrating essential mobile app functionalities.
+
 
